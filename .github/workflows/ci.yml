@@ -16,6 +16,8 @@ jobs:
         npm install
         npm run-script build
         npm run-script export
+        cd build
+        touch .nojekyll
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

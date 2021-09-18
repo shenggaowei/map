@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Deploy
-        run: bash ./deploy.sh
+        run: ./github/scripts/deploy.sh
+        shell: bash

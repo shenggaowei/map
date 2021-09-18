@@ -1,0 +1,11 @@
+name: tetris deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Deploy
+        run: /deploy.sh

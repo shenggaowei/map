@@ -1,7 +1,5 @@
 {
-    "cSpell.words": [
-        "tetris",
-        "vite",
-        "vitejs"
-    ]
+  "cSpell.words": ["tetris", "vite", "vitejs"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

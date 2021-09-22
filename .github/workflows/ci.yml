@@ -2,7 +2,7 @@ name: tetris deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04

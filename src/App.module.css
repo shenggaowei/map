@@ -2,3 +2,11 @@
   text-align: center;
   color: red;
 }
+
+.dark {
+  color: #000;
+}
+
+.light {
+  color: orange;
+}

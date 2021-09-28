@@ -1,10 +1,40 @@
 import React from "react";
-import styles from "./App.module.css";
+import { ThemeContext, themes, Color } from "./context/theme-context";
+import ThemeTogglerButton from "./context/themed-toggler-button";
 
-export default function App() {
+function Content() {
   return (
-    <div className={styles.App}>
-      <p>hello world</p>
+    <div>
+      <ThemeTogglerButton />
     </div>
   );
+}
+
+export default class App extends React.Component<
+  unknown,
+  { theme: Color; toggleTheme: () => void }
+> {
+  constructor(props: unknown) {
+    super(props);
+    this.state = {
+      theme: themes.light,
+      toggleTheme: this.toggleTheme,
+    };
+  }
+
+  toggleTheme = () => {
+    this.setState((state) => ({
+      theme: state.theme === themes.dark ? themes.light : themes.dark,
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        <ThemeContext.Provider value={this.state}>
+          <Content />
+        </ThemeContext.Provider>
+      </div>
+    );
+  }
 }

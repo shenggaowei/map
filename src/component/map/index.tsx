@@ -9,7 +9,7 @@ const MarkerPinImg = {
   blue: "https://gw.alipayobjects.com/mdn/rms_855bab/afts/img/A*n6cXTb8R7iUAAAAAAAAAAAAAARQnAQ",
 };
 
-const MarkerInfo = ({ title }) => {
+const MarkerInfo: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div className={styles.markerContent}>
       <div

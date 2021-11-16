@@ -1,16 +1,6 @@
 import React from "react";
 import { ThemeContext, themes, Color } from "./context/theme-context";
-import ThemeTogglerButton from "./context/themed-toggler-button";
 import ChartsPage from "./page/charts";
-
-function Content() {
-  return (
-    <div>
-      <ThemeTogglerButton />
-    </div>
-  );
-}
-
 export default class App extends React.Component<
   unknown,
   { theme: Color; toggleTheme: () => void }

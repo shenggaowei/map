@@ -170,3 +170,14 @@ export const ProvinceData = [
     value: null,
   },
 ];
+
+export const markerData = [
+  {
+    id: "5011000000404",
+    name: "铁路新村(华池路)",
+    longitude: 100,
+    latitude: 35,
+    unit_price: 71469.4,
+    count: 2,
+  },
+];
